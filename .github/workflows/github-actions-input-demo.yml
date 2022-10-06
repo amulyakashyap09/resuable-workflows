@@ -9,5 +9,5 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "::set-env name=INPUT_ALLOWED_FEATURES::${{ inputs.allowed_features }}"
+      - run: echo "inputs.allowed_features = ${{ inputs.allowed_features }}"
         shell: bash
