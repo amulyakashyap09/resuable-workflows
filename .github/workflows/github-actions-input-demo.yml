@@ -1,0 +1,13 @@
+name: Github Actions Input Demo
+
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+
+on:
+  workflow_call:
+
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "::set-env name=INPUT_ALLOWED_FEATURES::${{ inputs.allowed_features }}"
+      shell: bash
